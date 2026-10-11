@@ -1,0 +1,21 @@
+EXPERIMENTAL RESULTS REPORTED IN ASSIGNMENT
+n,linear_comparisons_avg,linear_time_ms,binary_comparisons_avg,binary_time_ms,hash_comparisons_avg,hash_time_ms,binary_sort_ms,hash_build_ms
+1000,754.3,0.0398,9.49,0.0028,1.04,0.00042,0.12,0.46
+10000,7359.6,0.7282,13.14,0.0067,0.98,0.0009,1.66,3.28
+100000,75509.0,6.9264,16.33,0.0049,1.1,0.00071,40.95,396.09
+1000000,718222.8,55.416,19.46,0.0063,1.01,0.00084,451.79,1119.82
+
+THEORETICAL BEST/AVERAGE/WORST COMPARISON ESTIMATES
+n,algorithm,best_case_comparisons,average_case_estimate,worst_case_comparisons,assumptions
+1000,Linear,1,750,1000,50% successful and 50% unsuccessful queries
+1000,Binary,1,about 9,10,Average successful search approx log2(n)-1; worst floor(log2(n))+1
+1000,Hash table,0 miss / 1 hit,about 1.4,1000,Expected average with load factor alpha about 0.75; all keys may collide in worst case
+10000,Linear,1,7500,10000,50% successful and 50% unsuccessful queries
+10000,Binary,1,about 12,14,Average successful search approx log2(n)-1; worst floor(log2(n))+1
+10000,Hash table,0 miss / 1 hit,about 1.4,10000,Expected average with load factor alpha about 0.75; all keys may collide in worst case
+100000,Linear,1,75000,100000,50% successful and 50% unsuccessful queries
+100000,Binary,1,about 15,17,Average successful search approx log2(n)-1; worst floor(log2(n))+1
+100000,Hash table,0 miss / 1 hit,about 1.4,100000,Expected average with load factor alpha about 0.75; all keys may collide in worst case
+1000000,Linear,1,750000,1000000,50% successful and 50% unsuccessful queries
+1000000,Binary,1,about 19,20,Average successful search approx log2(n)-1; worst floor(log2(n))+1
+1000000,Hash table,0 miss / 1 hit,about 1.4,1000000,Expected average with load factor alpha about 0.75; all keys may collide in worst case
