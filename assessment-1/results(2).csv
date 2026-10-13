@@ -1,0 +1,8 @@
+Module,Input Size (n),Operation Count,Estimated Time (seconds at 10 ops/s),Within 10-Minute Window,Time Complexity
+M1 - Duplicate detector,1000000,499999500000.00,49999950000.00,No,Theta(n^2)
+M2 - API rate limiter,1000000,1048575.00,104857.50,No,Theta(n)
+S2 - Binary search,1000000,20.00,2.00,Yes,Theta(log n)
+M4 - Current design,1000000,1999999000000.00,199999900000.00,No,Theta(n^2)
+M4 - Redesigned,1000000,20931568.57,2093156.86,No,Theta(n log n)
+M5 - Sales analytics,1000000,209599497.10,20959949.71,No,Theta(n log^2 n)
+Report generator,1000000,3000199315735.69,300019931573.57,No,Theta(n^2)
